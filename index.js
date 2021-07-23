@@ -38,8 +38,8 @@ function getTotalCount(animals) {
     }
   }
   //outside of the loop return the number variable
-  return totalCount
   console.log(totalCount)     
+  return totalCount
 }
 
 /**
