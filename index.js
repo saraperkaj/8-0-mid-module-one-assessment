@@ -97,7 +97,7 @@ function filterByCountMinimum(animals, minimum) {
   let moreThanMinCount = [];
   //loop through animals 
   for ( const animal of animals ){
-    //if animal.count < min
+    //if animal.count > min
     if (animal.count >= minimum){
       //push ani into []
        moreThanMinCount.push(animal);
@@ -122,10 +122,22 @@ function filterByCountMinimum(animals, minimum) {
  */
 function getMostCommonAnimal(animals) {
   //if imput is empty 
+  if (animals.length === 0){
     //return null
-  //declare empty {}
+    return null;
+  }
+  //declare a var assign it animals[0]
+  let hightestCount = animals[0];
   //loop through animals array
-    //
+  for (const animal of animals ){
+    //if animals is more than the var
+    if (animals > hightestCount){
+      //var = animal
+      hightestCount = animal;
+    } 
+  }
+  //outside of the loop return the var
+  return hightestCount
 }
 
 // Do not change anything below this line.
