@@ -89,18 +89,17 @@ function getAllKinds(animals) {
  */
 function filterByCountMinimum(animals, minimum) {
   //if !animal then 
-  if (!minimum){
+  if (!animals){
     //retrun an empty array
     return [];
   }
-  //declare a var assign it animals[0].count
-  let minimumCount = animals[0].count;
+  //declare a var assign it []
   let moreThanMinCount = [];
   //loop through animals 
   for ( const animal of animals ){
-    //if animal.count < var
-    if (animal.count >= minimumCount){
-      //var = animal
+    //if animal.count < min
+    if (animal.count <= minimum){
+      //push ani into []
        moreThanMinCount.push(animal);
       //return var    
       // console.log(minimum);
