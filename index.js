@@ -66,9 +66,8 @@ function getAllKinds(animals) {
     }
   } 
   //return the empty array var with the new info pushed  
-  console.log(animalKinds)
-  return animalKinds
-  
+  //console.log(animalKinds)
+  return animalKinds;
 }
 
 /**
@@ -89,7 +88,24 @@ function getAllKinds(animals) {
  * filterByCountMinimum([], 3); //> [] // returns empty array if input array is empty
  */
 function filterByCountMinimum(animals, minimum) {
-  //declare a open up yesterdays zoom, go tawards the end and watcha agian how colin did that last one
+  //if !animal then 
+  if (!animals){
+    //retrun an empty array
+    return [];
+  }
+  //declare a var assign it animals[0].count
+  let minimum = animals[0].count;
+  //loop through animals 
+  for ( const animal of animals ){
+    //if animal.count < var
+    if (animal.count < minimum){
+      //var = animal
+      minimum = animal;
+    }
+  }
+  //outside of the loop return var    
+  console.log(minimum);
+  return minimum;
 }
 
 /**
