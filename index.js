@@ -131,7 +131,7 @@ function getMostCommonAnimal(animals) {
   //loop through animals array
   for (const animal of animals ){
     //if animals is more than the var
-    if (animals > hightestCount){
+    if (animal.count > hightestCount.count){
       //var = animal
       hightestCount = animal;
     } 
