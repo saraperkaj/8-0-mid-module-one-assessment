@@ -89,7 +89,7 @@ function getAllKinds(animals) {
  */
 function filterByCountMinimum(animals, minimum) {
   //if !animal then 
-  if (!animals){
+  if (!minimum){
     //retrun an empty array
     return [];
   }
@@ -104,7 +104,7 @@ function filterByCountMinimum(animals, minimum) {
     }
   }
   //outside of the loop return var    
-  console.log(minimum);
+  // console.log(minimum);
   return minimum;
 }
 
