@@ -94,18 +94,18 @@ function filterByCountMinimum(animals, minimum) {
     return [];
   }
   //declare a var assign it animals[0].count
-  let minimum = animals[0].count;
+  let minimumCount = animals[0].count;
   //loop through animals 
   for ( const animal of animals ){
     //if animal.count < var
-    if (animal.count < minimum){
+    if (animal.count < minimumCount){
       //var = animal
-      minimum = animal;
+      minimumCount = animal;
     }
   }
   //outside of the loop return var    
   // console.log(minimum);
-  return minimum;
+  return minimumCount;
 }
 
 /**
