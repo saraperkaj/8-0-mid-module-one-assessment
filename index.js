@@ -89,7 +89,7 @@ function getAllKinds(animals) {
  */
 function filterByCountMinimum(animals, minimum) {
   //if !animal then 
-  if (!animals){
+  if (animals.length === 0){
     //retrun an empty array
     return [];
   }
@@ -98,14 +98,14 @@ function filterByCountMinimum(animals, minimum) {
   //loop through animals 
   for ( const animal of animals ){
     //if animal.count < min
-    if (animal.count <= minimum){
+    if (animal.count >= minimum){
       //push ani into []
        moreThanMinCount.push(animal);
-      //return var    
-      // console.log(minimum);
-      return moreThanMinCount;
+      }
     }
-  }
+    //return var    
+  // console.log(minimum);
+  return moreThanMinCount;
 }
 
 /**
@@ -121,7 +121,11 @@ function filterByCountMinimum(animals, minimum) {
  * getMostCommonAnimal([]); //> null // returns null if the input is empty
  */
 function getMostCommonAnimal(animals) {
-  //declare 
+  //if imput is empty 
+    //return null
+  //declare empty {}
+  //loop through animals array
+    //
 }
 
 // Do not change anything below this line.
