@@ -32,14 +32,14 @@ function getTotalCount(animals) {
   // loop through animals
   for (const animal of animals ){
     //if animal
-    if (animal){
+    if (animal.count){
       // return var += animal.count
-      totalCount += animal.count
+      totalCount += animal.count;
     }
   }
   //outside of the loop return the number variable
-  console.log(totalCount)     
-  return totalCount
+  //console.log(totalCount)     
+  return totalCount;
 }
 
 /**
@@ -56,10 +56,19 @@ function getTotalCount(animals) {
  */
 function getAllKinds(animals) {
   //declare your var assign it an empty []
-  // loop through animals 
+  let animalKinds = [];
+  // loop through animals
+  for ( const animal of animals ){
     // if animals 
+    if (animal){
       //return the kind key (var.push(animals.kind))
-  //return the empty array var with the new info pushed     
+      animalKinds.push(animal.kind);
+    }
+  } 
+  //return the empty array var with the new info pushed  
+  console.log(animalKinds)
+  return animalKinds
+  
 }
 
 /**
